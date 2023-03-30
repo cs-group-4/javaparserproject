@@ -38,15 +38,7 @@ class UserInterface extends UpdateTracking{
 		int input = tracker.nextInt();
 
 //depending on what value the user/admin enters, this is what will be displayed
-//		switch(input){
-//			case 1 : 
-//                            trackProductScreen();
-//                            break;
-//			case 2 : admin();
-//                            break;
-//                        default : System.out.println("Invalid Input, try again.");
-//		}
-                // witch statements not allowed in javaparser
+                // switch statements not allowed in javaparser
                 if(input == 1){
                     trackProductScreen();
                 } else if(input == 2){
@@ -75,11 +67,7 @@ class UserInterface extends UpdateTracking{
                     } else{
                         shippingStage = "Delivered";
                     }
-//                    shippingStage = switch (currentShippingStage) {
-//                        case 1 -> "Loading";
-//                        case 2 -> "In transit";
-//                        default -> "Delivered";
-//                    };
+
                     trackingDetailsScreen(getCustomerName(), getOrderNumber(), shippingStage);
 		} else{
 			System.out.println("Code doesnt exist");
@@ -99,12 +87,7 @@ class UserInterface extends UpdateTracking{
 //		int trackingCode = tracker.nextInt();
                 System.out.println("Customer name: " + getCustomerName());
 		System.out.println("Order numer: " + getOrderNumber());
-//                String shipStage = switch (getShippingStage()) {
-//                        case 1 -> "Loading";
-//                    
-//                    case 2 -> "In transit";
-//                        default -> "Delivered";
-//                    
+
                 String shipStage;
                 if(getShippingStage() == 1){
                         shipStage = "Loading";
