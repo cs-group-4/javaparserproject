@@ -17,9 +17,9 @@ public class OrderTracker {
 	}
 }
 
-//Once the admin logs in, they will be able to make the needed changes to the customer's tracking page.
+//Once the admin logs in, they will be able to make the needed changes to the customers tracking page.
 
-// Gain, Thando and Mwiza's class
+// Gain, Thando and Mwizas class
 class UserInterface extends UpdateTracking{
 	Scanner tracker = new Scanner(System.in);
         public void seperator(){ // Sperates the different pages
@@ -126,7 +126,7 @@ class UserInterface extends UpdateTracking{
 	}
 }
 
-// Mwiza and Emmanuel's class
+// Mwiza and Emmanuels class
 class UpdateTracking extends TrackingBackEnd{
     int shippingStage = 1;
     
@@ -140,7 +140,7 @@ class UpdateTracking extends TrackingBackEnd{
     
 }
 
-// Gabby and Taba's class
+// Gabby and Tabas class
 class TrackingBackEnd {
     String customerName = "Jane Doe";    
     String orderNumber = "ABC12345";
