@@ -1,0 +1,1094 @@
+<root type='CompilationUnit'>
+  <packageDeclaration type='PackageDeclaration'>
+    <name type='Name' identifier='jsparserproject'>
+      <qualifier type='Name' identifier='group4'>
+        <qualifier type='Name' identifier='com'></qualifier>
+      </qualifier>
+    </name>
+  </packageDeclaration>
+  <comment type='BlockComment'
+    content='
+  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+  '></comment>
+  <imports>
+    <import type='ImportDeclaration' isAsterisk='true' isStatic='false'>
+      <name type='Name' identifier='util'>
+        <qualifier type='Name' identifier='java'></qualifier>
+      </name>
+    </import>
+  </imports>
+  <types>
+    <type type='ClassOrInterfaceDeclaration' isInterface='false'>
+      <name type='SimpleName' identifier='OrderTracker'></name>
+      <comment type='JavadocComment' content='
+  *
+  * @author PC USER
+  '></comment>
+      <members>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <initializer type='ObjectCreationExpr'>
+                        <type type='ClassOrInterfaceType'>
+                          <name type='SimpleName' identifier='UserInterface'></name>
+                        </type>
+                      </initializer>
+                      <name type='SimpleName' identifier='ui'></name>
+                      <type type='ClassOrInterfaceType'>
+                        <name type='SimpleName' identifier='UserInterface'></name>
+                      </type>
+                    </variable>
+                  </variables>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='home'></name>
+                  <scope type='NameExpr'>
+                    <name type='SimpleName' identifier='ui'></name>
+                  </scope>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='main'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+            <modifier type='Modifier' keyword='STATIC'></modifier>
+          </modifiers>
+          <parameters>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='args'></name>
+              <type type='ArrayType' origin='TYPE'>
+                <componentType type='ClassOrInterfaceType'>
+                  <name type='SimpleName' identifier='String'></name>
+                </componentType>
+              </type>
+            </parameter>
+          </parameters>
+        </member>
+      </members>
+      <modifiers>
+        <modifier type='Modifier' keyword='PUBLIC'></modifier>
+      </modifiers>
+    </type>
+    <type type='ClassOrInterfaceDeclaration' isInterface='false'>
+      <name type='SimpleName' identifier='UserInterface'></name>
+      <comment type='LineComment' content=' Gain, Thando and Mwizas class'></comment>
+      <extendedTypes>
+        <extendedType type='ClassOrInterfaceType'>
+          <name type='SimpleName' identifier='UpdateTracking'></name>
+        </extendedType>
+      </extendedTypes>
+      <members>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='ObjectCreationExpr'>
+                <type type='ClassOrInterfaceType'>
+                  <name type='SimpleName' identifier='Scanner'></name>
+                </type>
+                <arguments>
+                  <argument type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='in'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </argument>
+                </arguments>
+              </initializer>
+              <name type='SimpleName' identifier='tracker'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='Scanner'></name>
+              </type>
+            </variable>
+          </variables>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr'
+                      value='----------------------------------------------'></argument>
+                  </arguments>
+                </expression>
+                <comment type='LineComment' content=' Sperates the different pages'></comment>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='seperator'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='seperator'></name>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Home Page'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Press 1 to track your package'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Press 2 for Admin Login'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='print'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Enter here: '></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <initializer type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='nextInt'></name>
+                        <scope type='NameExpr'>
+                          <name type='SimpleName' identifier='tracker'></name>
+                        </scope>
+                      </initializer>
+                      <name type='SimpleName' identifier='input'></name>
+                      <type type='PrimitiveType' type='INT'></type>
+                    </variable>
+                  </variables>
+                </expression>
+                <comment type='LineComment' content='prompt user/admin to input a value '></comment>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='NameExpr'>
+                    <name type='SimpleName' identifier='input'></name>
+                  </left>
+                  <right type='IntegerLiteralExpr' value='1'></right>
+                </condition>
+                <elseStmt type='IfStmt'>
+                  <condition type='BinaryExpr' operator='EQUALS'>
+                    <left type='NameExpr'>
+                      <name type='SimpleName' identifier='input'></name>
+                    </left>
+                    <right type='IntegerLiteralExpr' value='2'></right>
+                  </condition>
+                  <elseStmt type='BlockStmt'>
+                    <statements>
+                      <statement type='ExpressionStmt'>
+                        <expression type='MethodCallExpr'>
+                          <name type='SimpleName' identifier='println'></name>
+                          <scope type='FieldAccessExpr'>
+                            <name type='SimpleName' identifier='out'></name>
+                            <scope type='NameExpr'>
+                              <name type='SimpleName' identifier='System'></name>
+                            </scope>
+                          </scope>
+                          <arguments>
+                            <argument type='StringLiteralExpr' value='Invalid Input, try again.'></argument>
+                          </arguments>
+                        </expression>
+                      </statement>
+                    </statements>
+                  </elseStmt>
+                  <thenStmt type='BlockStmt'>
+                    <statements>
+                      <statement type='ExpressionStmt'>
+                        <expression type='MethodCallExpr'>
+                          <name type='SimpleName' identifier='admin'></name>
+                        </expression>
+                      </statement>
+                    </statements>
+                  </thenStmt>
+                </elseStmt>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='trackProductScreen'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+                <comment type='LineComment' content=' switch statements not allowed in javaparser'></comment>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='home'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='seperator'></name>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Tracking Page'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr'
+                      value='Enter your tracking code,or enter 0 to go back to previous screen'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <initializer type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='nextInt'></name>
+                        <scope type='NameExpr'>
+                          <name type='SimpleName' identifier='tracker'></name>
+                        </scope>
+                      </initializer>
+                      <name type='SimpleName' identifier='code'></name>
+                      <type type='PrimitiveType' type='LONG'></type>
+                    </variable>
+                  </variables>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <name type='SimpleName' identifier='shippingStage'></name>
+                      <type type='ClassOrInterfaceType'>
+                        <name type='SimpleName' identifier='String'></name>
+                      </type>
+                    </variable>
+                  </variables>
+                </expression>
+                <comment type='LineComment' content='check if code is valid'></comment>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='NameExpr'>
+                    <name type='SimpleName' identifier='code'></name>
+                  </left>
+                  <right type='IntegerLiteralExpr' value='0'></right>
+                </condition>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='home'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='isValid'></name>
+                  <arguments>
+                    <argument type='NameExpr'>
+                      <name type='SimpleName' identifier='code'></name>
+                    </argument>
+                  </arguments>
+                </condition>
+                <elseStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='println'></name>
+                        <scope type='FieldAccessExpr'>
+                          <name type='SimpleName' identifier='out'></name>
+                          <scope type='NameExpr'>
+                            <name type='SimpleName' identifier='System'></name>
+                          </scope>
+                        </scope>
+                        <arguments>
+                          <argument type='StringLiteralExpr' value='Code doesnt exist'></argument>
+                        </arguments>
+                      </expression>
+                    </statement>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='trackProductScreen'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </elseStmt>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='VariableDeclarationExpr'>
+                        <variables>
+                          <variable type='VariableDeclarator'>
+                            <initializer type='MethodCallExpr'>
+                              <name type='SimpleName' identifier='getShippingStage'></name>
+                            </initializer>
+                            <name type='SimpleName' identifier='currentShippingStage'></name>
+                            <type type='PrimitiveType' type='INT'></type>
+                          </variable>
+                        </variables>
+                      </expression>
+                    </statement>
+                    <statement type='IfStmt'>
+                      <condition type='BinaryExpr' operator='EQUALS'>
+                        <left type='NameExpr'>
+                          <name type='SimpleName' identifier='currentShippingStage'></name>
+                        </left>
+                        <right type='IntegerLiteralExpr' value='1'></right>
+                      </condition>
+                      <elseStmt type='IfStmt'>
+                        <condition type='BinaryExpr' operator='EQUALS'>
+                          <left type='NameExpr'>
+                            <name type='SimpleName' identifier='currentShippingStage'></name>
+                          </left>
+                          <right type='IntegerLiteralExpr' value='2'></right>
+                        </condition>
+                        <elseStmt type='BlockStmt'>
+                          <statements>
+                            <statement type='ExpressionStmt'>
+                              <expression type='AssignExpr' operator='ASSIGN'>
+                                <target type='NameExpr'>
+                                  <name type='SimpleName' identifier='shippingStage'></name>
+                                </target>
+                                <value type='StringLiteralExpr' value='Delivered'></value>
+                              </expression>
+                            </statement>
+                          </statements>
+                        </elseStmt>
+                        <thenStmt type='BlockStmt'>
+                          <statements>
+                            <statement type='ExpressionStmt'>
+                              <expression type='AssignExpr' operator='ASSIGN'>
+                                <target type='NameExpr'>
+                                  <name type='SimpleName' identifier='shippingStage'></name>
+                                </target>
+                                <value type='StringLiteralExpr' value='In transit'></value>
+                              </expression>
+                            </statement>
+                          </statements>
+                        </thenStmt>
+                      </elseStmt>
+                      <thenStmt type='BlockStmt'>
+                        <statements>
+                          <statement type='ExpressionStmt'>
+                            <expression type='AssignExpr' operator='ASSIGN'>
+                              <target type='NameExpr'>
+                                <name type='SimpleName' identifier='shippingStage'></name>
+                              </target>
+                              <value type='StringLiteralExpr' value='Loading'></value>
+                            </expression>
+                          </statement>
+                        </statements>
+                      </thenStmt>
+                    </statement>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='trackingDetailsScreen'></name>
+                        <arguments>
+                          <argument type='MethodCallExpr'>
+                            <name type='SimpleName' identifier='getCustomerName'></name>
+                          </argument>
+                          <argument type='MethodCallExpr'>
+                            <name type='SimpleName' identifier='getOrderNumber'></name>
+                          </argument>
+                          <argument type='NameExpr'>
+                            <name type='SimpleName' identifier='shippingStage'></name>
+                          </argument>
+                        </arguments>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='trackProductScreen'></name>
+          <comment type='LineComment'
+            content='user is able to see and track the progress of their product'></comment>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='seperator'></name>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Admin Page'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='BinaryExpr' operator='PLUS'>
+                      <left type='StringLiteralExpr' value='Customer name: '></left>
+                      <right type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='getCustomerName'></name>
+                      </right>
+                    </argument>
+                  </arguments>
+                </expression>
+                <comment type='LineComment' content='		int trackingCode = tracker.nextInt();'></comment>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='BinaryExpr' operator='PLUS'>
+                      <left type='StringLiteralExpr' value='Order numer: '></left>
+                      <right type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='getOrderNumber'></name>
+                      </right>
+                    </argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <name type='SimpleName' identifier='shipStage'></name>
+                      <type type='ClassOrInterfaceType'>
+                        <name type='SimpleName' identifier='String'></name>
+                      </type>
+                    </variable>
+                  </variables>
+                </expression>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='MethodCallExpr'>
+                    <name type='SimpleName' identifier='getShippingStage'></name>
+                  </left>
+                  <right type='IntegerLiteralExpr' value='1'></right>
+                </condition>
+                <elseStmt type='IfStmt'>
+                  <condition type='BinaryExpr' operator='EQUALS'>
+                    <left type='MethodCallExpr'>
+                      <name type='SimpleName' identifier='getShippingStage'></name>
+                    </left>
+                    <right type='IntegerLiteralExpr' value='2'></right>
+                  </condition>
+                  <elseStmt type='BlockStmt'>
+                    <statements>
+                      <statement type='ExpressionStmt'>
+                        <expression type='AssignExpr' operator='ASSIGN'>
+                          <target type='NameExpr'>
+                            <name type='SimpleName' identifier='shipStage'></name>
+                          </target>
+                          <value type='StringLiteralExpr' value='Delivered'></value>
+                        </expression>
+                      </statement>
+                    </statements>
+                  </elseStmt>
+                  <thenStmt type='BlockStmt'>
+                    <statements>
+                      <statement type='ExpressionStmt'>
+                        <expression type='AssignExpr' operator='ASSIGN'>
+                          <target type='NameExpr'>
+                            <name type='SimpleName' identifier='shipStage'></name>
+                          </target>
+                          <value type='StringLiteralExpr' value='In transit'></value>
+                        </expression>
+                      </statement>
+                    </statements>
+                  </thenStmt>
+                </elseStmt>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='AssignExpr' operator='ASSIGN'>
+                        <target type='NameExpr'>
+                          <name type='SimpleName' identifier='shipStage'></name>
+                        </target>
+                        <value type='StringLiteralExpr' value='Loading'></value>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='BinaryExpr' operator='PLUS'>
+                      <left type='StringLiteralExpr' value='Shipping stage: '></left>
+                      <right type='NameExpr'>
+                        <name type='SimpleName' identifier='shipStage'></name>
+                      </right>
+                    </argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='seperator'></name>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='To update the shipping stage, '></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Press 1 for loading'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Press 2 for in transit'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value='Press 3 for delivered'></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='print'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr'
+                      value='Enter 0 to go back to previous screen: '></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <initializer type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='nextInt'></name>
+                        <scope type='NameExpr'>
+                          <name type='SimpleName' identifier='tracker'></name>
+                        </scope>
+                      </initializer>
+                      <name type='SimpleName' identifier='back'></name>
+                      <type type='PrimitiveType' type='INT'></type>
+                    </variable>
+                  </variables>
+                </expression>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='NameExpr'>
+                    <name type='SimpleName' identifier='back'></name>
+                  </left>
+                  <right type='IntegerLiteralExpr' value='0'></right>
+                </condition>
+                <elseStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='setShippingStage'></name>
+                        <arguments>
+                          <argument type='NameExpr'>
+                            <name type='SimpleName' identifier='back'></name>
+                          </argument>
+                        </arguments>
+                      </expression>
+                    </statement>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='admin'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </elseStmt>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='home'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='admin'></name>
+          <comment type='LineComment'
+            content='allows the admin to make updates and changes concerning the shipment'></comment>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='seperator'></name>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='printf'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr'
+                      value='Fullname: %s %n Order Number: %s %n Shipping Stage: %s'></argument>
+                    <argument type='NameExpr'>
+                      <name type='SimpleName' identifier='name'></name>
+                    </argument>
+                    <argument type='NameExpr'>
+                      <name type='SimpleName' identifier='orderNumber'></name>
+                    </argument>
+                    <argument type='NameExpr'>
+                      <name type='SimpleName' identifier='shippingStage'></name>
+                    </argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr' value=''></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='MethodCallExpr'>
+                  <name type='SimpleName' identifier='println'></name>
+                  <scope type='FieldAccessExpr'>
+                    <name type='SimpleName' identifier='out'></name>
+                    <scope type='NameExpr'>
+                      <name type='SimpleName' identifier='System'></name>
+                    </scope>
+                  </scope>
+                  <arguments>
+                    <argument type='StringLiteralExpr'
+                      value='Enter 0 to go back to previous screen: '></argument>
+                  </arguments>
+                </expression>
+              </statement>
+              <statement type='ExpressionStmt'>
+                <expression type='VariableDeclarationExpr'>
+                  <variables>
+                    <variable type='VariableDeclarator'>
+                      <initializer type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='nextInt'></name>
+                        <scope type='NameExpr'>
+                          <name type='SimpleName' identifier='tracker'></name>
+                        </scope>
+                      </initializer>
+                      <name type='SimpleName' identifier='back'></name>
+                      <type type='PrimitiveType' type='INT'></type>
+                    </variable>
+                  </variables>
+                </expression>
+              </statement>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='NameExpr'>
+                    <name type='SimpleName' identifier='back'></name>
+                  </left>
+                  <right type='IntegerLiteralExpr' value='0'></right>
+                </condition>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='MethodCallExpr'>
+                        <name type='SimpleName' identifier='trackProductScreen'></name>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='trackingDetailsScreen'></name>
+          <comment type='LineComment'
+            content='displays the details of the customer as well as their shipping details'></comment>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+          <parameters>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='name'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='String'></name>
+              </type>
+            </parameter>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='orderNumber'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='String'></name>
+              </type>
+            </parameter>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='shippingStage'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='String'></name>
+              </type>
+            </parameter>
+          </parameters>
+        </member>
+      </members>
+    </type>
+    <type type='ClassOrInterfaceDeclaration' isInterface='false'>
+      <name type='SimpleName' identifier='UpdateTracking'></name>
+      <comment type='LineComment' content=' Mwiza and Emmanuels class'></comment>
+      <extendedTypes>
+        <extendedType type='ClassOrInterfaceType'>
+          <name type='SimpleName' identifier='TrackingBackEnd'></name>
+        </extendedType>
+      </extendedTypes>
+      <members>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='IntegerLiteralExpr' value='1'></initializer>
+              <name type='SimpleName' identifier='shippingStage'></name>
+              <type type='PrimitiveType' type='INT'></type>
+            </variable>
+          </variables>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ExpressionStmt'>
+                <expression type='AssignExpr' operator='ASSIGN'>
+                  <target type='NameExpr'>
+                    <name type='SimpleName' identifier='shippingStage'></name>
+                  </target>
+                  <value type='NameExpr'>
+                    <name type='SimpleName' identifier='stage'></name>
+                  </value>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='VoidType'></type>
+          <name type='SimpleName' identifier='setShippingStage'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+          <parameters>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='stage'></name>
+              <type type='PrimitiveType' type='INT'></type>
+            </parameter>
+          </parameters>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ReturnStmt'>
+                <expression type='FieldAccessExpr'>
+                  <name type='SimpleName' identifier='shippingStage'></name>
+                  <scope type='ThisExpr'></scope>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='PrimitiveType' type='INT'></type>
+          <name type='SimpleName' identifier='getShippingStage'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+      </members>
+    </type>
+    <type type='ClassOrInterfaceDeclaration' isInterface='false'>
+      <name type='SimpleName' identifier='TrackingBackEnd'></name>
+      <comment type='LineComment' content=' Gabby and Tabas class'></comment>
+      <members>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='StringLiteralExpr' value='Jane Doe'></initializer>
+              <name type='SimpleName' identifier='customerName'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='String'></name>
+              </type>
+            </variable>
+          </variables>
+        </member>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='StringLiteralExpr' value='ABC12345'></initializer>
+              <name type='SimpleName' identifier='orderNumber'></name>
+              <type type='ClassOrInterfaceType'>
+                <name type='SimpleName' identifier='String'></name>
+              </type>
+            </variable>
+          </variables>
+        </member>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='IntegerLiteralExpr' value='123456'></initializer>
+              <name type='SimpleName' identifier='trackingCode'></name>
+              <type type='PrimitiveType' type='LONG'></type>
+            </variable>
+          </variables>
+        </member>
+        <member type='FieldDeclaration'>
+          <variables>
+            <variable type='VariableDeclarator'>
+              <initializer type='BooleanLiteralExpr' value='false'></initializer>
+              <name type='SimpleName' identifier='valid'></name>
+              <type type='PrimitiveType' type='BOOLEAN'></type>
+            </variable>
+          </variables>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='IfStmt'>
+                <condition type='BinaryExpr' operator='EQUALS'>
+                  <left type='NameExpr'>
+                    <name type='SimpleName' identifier='code'></name>
+                  </left>
+                  <right type='NameExpr'>
+                    <name type='SimpleName' identifier='trackingCode'></name>
+                  </right>
+                </condition>
+                <thenStmt type='BlockStmt'>
+                  <statements>
+                    <statement type='ExpressionStmt'>
+                      <expression type='AssignExpr' operator='ASSIGN'>
+                        <target type='NameExpr'>
+                          <name type='SimpleName' identifier='valid'></name>
+                        </target>
+                        <value type='BooleanLiteralExpr' value='true'></value>
+                      </expression>
+                    </statement>
+                  </statements>
+                </thenStmt>
+              </statement>
+              <statement type='ReturnStmt'>
+                <expression type='NameExpr'>
+                  <name type='SimpleName' identifier='valid'></name>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='PrimitiveType' type='BOOLEAN'></type>
+          <name type='SimpleName' identifier='isValid'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+          <parameters>
+            <parameter type='Parameter' isVarArgs='false'>
+              <name type='SimpleName' identifier='code'></name>
+              <type type='PrimitiveType' type='LONG'></type>
+            </parameter>
+          </parameters>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ReturnStmt'>
+                <expression type='FieldAccessExpr'>
+                  <name type='SimpleName' identifier='customerName'></name>
+                  <scope type='ThisExpr'></scope>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='ClassOrInterfaceType'>
+            <name type='SimpleName' identifier='String'></name>
+          </type>
+          <name type='SimpleName' identifier='getCustomerName'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+        <member type='MethodDeclaration'>
+          <body type='BlockStmt'>
+            <statements>
+              <statement type='ReturnStmt'>
+                <expression type='FieldAccessExpr'>
+                  <name type='SimpleName' identifier='orderNumber'></name>
+                  <scope type='ThisExpr'></scope>
+                </expression>
+              </statement>
+            </statements>
+          </body>
+          <type type='ClassOrInterfaceType'>
+            <name type='SimpleName' identifier='String'></name>
+          </type>
+          <name type='SimpleName' identifier='getOrderNumber'></name>
+          <modifiers>
+            <modifier type='Modifier' keyword='PUBLIC'></modifier>
+          </modifiers>
+        </member>
+      </members>
+    </type>
+  </types>
+</root>
